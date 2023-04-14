@@ -5,9 +5,9 @@ import "./ExpenseItem.css";
 
 const ExpenseItem = (props) => {
   const [title, setTitle] = useState(props.title);
+  console.log("Expense item updated!");
   const clickHandler = () => {
     setTitle("updated");
-    console.log(title);
   };
   return (
     <Card className="expense-item">
