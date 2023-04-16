@@ -10,6 +10,7 @@ const ExpenseForm = () => {
   //   enteredAmount: "",
   //   enteredDate: "",
   // });
+  // titleChangeHandler(event): This function is a handler for the "Title" input field. It is called whenever the value in the "Title" input field changes. It receives an event object as a parameter, which contains information about the change event. The function extracts the current value of the "Title" input field from event.target.value and updates the enteredTitle state variable using the setEnteredTitle function
   const titleChangeHandler = (event) => {
     setEnteredTitle(event.target.value);
     // setUserInput({
@@ -21,7 +22,7 @@ const ExpenseForm = () => {
     //  })
   };
   const amountChangeHandler = (event) => {
-    setEnteredAmount(event.taget.value);
+    setEnteredAmount(event.target.value);
     // setUserInput({
     //   ...userInput,
     //   enteredAmount: event.target.value,
@@ -34,9 +35,19 @@ const ExpenseForm = () => {
     //   enteredDate: event.target.value,
     // });
   };
+  //submitHandler(event): This function is called when the form is submitted. It receives an event object as a parameter. The first line of the function, event.preventDefault(), prevents the default behavior of form submission (i.e., page reload). The function then creates an object expenseData containing the current values of the enteredTitle, enteredAmount, and enteredDate state variables. The enteredDate value is converted to a JavaScript Date object.
+  const submitHandler = (event) => {
+    event.preventDefault();
 
+    const expenseData = {
+      title: enteredTitle,
+      amount: enteredAmount,
+      date: new Date(enteredDate),
+    };
+    console.log(expenseData);
+  };
   return (
-    <form>
+    <form onSubmit={submitHandler}>
       <div className="new-expense__controls">
         <div className="new-expense__control">
           <label>Title</label>
