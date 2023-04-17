@@ -7,6 +7,7 @@ import { useState } from "react";
 
 const Expenses = (props) => {
   const [filteredYear, setFilteredYear] = useState("2020");
+
   const filterChageHandler = (selectedYear) => {
     setFilteredYear(selectedYear);
   };
