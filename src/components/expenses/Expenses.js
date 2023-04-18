@@ -11,6 +11,7 @@ const Expenses = (props) => {
   const filterChageHandler = (selectedYear) => {
     setFilteredYear(selectedYear);
   };
+
   const expenses = props.expenses;
   return (
     <div>
