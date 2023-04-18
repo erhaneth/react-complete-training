@@ -5,20 +5,26 @@ const Dummy_Data = [
   {
     id: "e1",
     title: "Rent",
-    amount: 345,
-    date: new Date(2023, 4, 9),
+    amount: 1345,
+    date: new Date(2020, 4, 9),
   },
   {
     id: "e2",
     title: "Insurance",
-    amount: 34,
-    date: new Date(2023, 4, 23),
+    amount: 134,
+    date: new Date(2021, 9, 23),
   },
   {
     id: "e3",
-    title: "Phone",
+    title: "Phone Bill",
     amount: 35,
-    date: new Date(2023, 6, 21),
+    date: new Date(2023, 2, 11),
+  },
+  {
+    id: "e4",
+    title: "Subscriptions",
+    amount: 115,
+    date: new Date(2022, 5, 21),
   },
 ];
 const App = () => {
