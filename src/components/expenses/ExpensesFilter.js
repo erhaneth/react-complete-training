@@ -19,6 +19,8 @@ const ExpenseFilter = (props) => {
         </select>
       </div>
     </div>
+    //TODO: implement future dates that are after today's date
+    // if there is no expense for a certain year, prompt no data message
   );
 };
 export default ExpenseFilter;
