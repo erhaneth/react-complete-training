@@ -18,15 +18,6 @@ const NewExpense = (props) => {
   const stopEditingHandler = () => {
     setIsEditing(false);
   };
-  // if (!isEditing) {
-  //   return (
-  //     <div className="new-expense__actions">
-  //       <button type="button" onClick={stopEditingHandler}>
-  //         Cancel
-  //       </button>
-  //     </div>
-  //   );
-  // }
   return (
     <div className="new-expense">
       {!isEditing && (
