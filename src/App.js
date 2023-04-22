@@ -16,14 +16,20 @@ const Dummy_Data = [
   },
   {
     id: "e3",
+    title: "Car Loan",
+    amount: 412,
+    date: new Date(2020, 4, 24),
+  },
+  {
+    id: "e4",
     title: "Phone Bill",
     amount: 35,
     date: new Date(2023, 2, 11),
   },
   {
-    id: "e4",
+    id: "e5",
     title: "Subscriptions",
-    amount: 115,
+    amount: 45,
     date: new Date(2022, 5, 21),
   },
 ];

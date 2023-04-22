@@ -11,15 +11,11 @@ const ExpenseForm = (props) => {
   };
   const amountChangeHandler = (event) => {
     setEnteredAmount(event.target.value);
-    // setUserInput({
-    //   ...userInput,
-    //   enteredAmount: event.target.value,
-    // });
   };
   const dateChangeHandler = (event) => {
     setEnteredDate(event.target.value);
   };
-  //submitHandler(event): This function is called when the form is submitted. It receives an event object as a parameter. The first line of the function, event.preventDefault(), prevents the default behavior of form submission (i.e., page reload). The function then creates an object expenseData containing the current values of the enteredTitle, enteredAmount, and enteredDate state variables.
+  //submit handler
   const submitHandler = (event) => {
     event.preventDefault();
 
