@@ -1,12 +1,13 @@
 import React, { useState } from "react";
 import ExpenseForm from "./ExpenseForm";
 import "./NewExpense.css";
+import { v4 as uuidv4 } from "uuid";
 
 const NewExpense = (props) => {
   const saveExpenseDataHandler = (enteredExpenseData) => {
     const expenseData = {
       ...enteredExpenseData,
-      id: Math.random().toString(),
+      id: uuidv4(),
     };
     props.onAddExpense(expenseData);
     setIsEditing(false);
